@@ -27,12 +27,12 @@ import javax.swing.JOptionPane;
  */
 public class OsuFinder {
 
-    /** Array of common osu! paths */
+    /** Array of common osu! paths. */
     private final static File[] usualOsuPaths = new File[]{new File("C:\\Program Files/osu!"), new File("C:\\Programme/osu!"), new File("C:\\Programme (x86)/osu!"), new File("C:\\Program Files (x86)/osu!"), new File("C:\\osu!"), new File("C:\\Games/osu!"), new File("D:\\Games/osu!"), new File("E:\\Games/osu!"), new File("C:\\Spiele/osu!"), new File("D:\\Spiele/osu!"), new File("E:\\Spiele/osu!"), new File("D:\\osu!"), new File("E:\\osu!"), new File("F:\\osu!"), new File("G:\\osu!"), new File("H:\\osu!"), new File("."), new File("..")};
     
     /**
      * Searches the array of common osu! paths for the user's osu! installation.
-     * @return 
+     * @return The path where osu! was found or null if osu! was not found in one of the default paths.
      */
     public static File findOsu(){
         for (File f : usualOsuPaths){

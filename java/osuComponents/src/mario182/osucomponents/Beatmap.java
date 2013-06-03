@@ -151,7 +151,7 @@ public class Beatmap implements Comparable<Beatmap> {
 
     /**
      * Returns the romanized name of the artist of this beatmap's song.
-     * @return the romanized name of the artist of this beatmap's song.
+     * @return The romanized name of the artist of this beatmap's song.
      */
     public String getArtistRomanized() {
         return artistRomanized;
@@ -167,7 +167,7 @@ public class Beatmap implements Comparable<Beatmap> {
 
     /**
      * Returns the romanized title of this beatmap's song.
-     * @return the romanized title of this beatmap's song.
+     * @return The romanized title of this beatmap's song.
      */
     public String getTitleRomanized() {
         return titleRomanized;
@@ -231,7 +231,7 @@ public class Beatmap implements Comparable<Beatmap> {
     
     /**
      * Returns this beatmap's tags.
-     * @return This beatmap's tags as a space-seperated string;
+     * @return This beatmap's tags as a space-seperated string
      */
     public String getTagsAsString() {
         return tagsString;
@@ -251,7 +251,7 @@ public class Beatmap implements Comparable<Beatmap> {
      * @param other The other beatmap.
      * @return -1 if this beatmap's artist is before the other beatmap's artist<br />
      * 0 if this beatmap's artist AND the beatmap's title is before the other beatmap's artist/title<br />
-     * 1 if this beatmap's artist is after the other beatmap's artist
+     * 1 if this beatmap's artist is after the other beatmap's artist<br />
      * If the artists equal eachother, the title of the song is checked.
      */
     @Override
