@@ -89,13 +89,17 @@ public class OsuFileFormatReader {
                         break;
                 }
             }
+            if (position == OsuFileScanStatus.FORMAT_UNKNOWN){
+                throw new IOException("Not a beatmap.");
+            }
             if(!b.containsKey("Background")) {
                 b.put("Background", "nonexistent.png");
             }
-            br.close();
             return b;
         } catch(Exception e) {
             throw new IOException("Failed to read .osu file ("+osuFile+") - Line "+(br!=null?br.getLineNumber():"0")+": "+row, e);
+        } finally {
+            br.close();
         }
     }
 
