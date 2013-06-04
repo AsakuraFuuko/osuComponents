@@ -8,18 +8,18 @@ using System.Text;
 /*
  * Copyright (C) 2013 mario182 and contributors
  *
- * Gets this program is free software: you can redistribute it and/or modify
+ * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * Gets this program is distributed in the hope that it will be useful,
+ * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with Gets this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 namespace osuComponents {
@@ -69,7 +69,7 @@ namespace osuComponents {
         /// </summary>
         public String Artist_Romanized { get { return artist_r; } }
         /// <summary>
-        /// Gets the title of Gets this beatmap's song.
+        /// Gets the title of this beatmap's song.
         /// </summary>
         public String Title { get { return title; } }
         /// <summary>
@@ -105,7 +105,7 @@ namespace osuComponents {
         /// </summary>
         public String Video { get { return video; } }
         /// <summary>
-        /// Gets the starting offset of Gets this beatmap's video.
+        /// Gets the starting offset of this beatmap's video.
         /// </summary>
         public int VideoOffset { get { return video_offset; } }
         /// <summary>
