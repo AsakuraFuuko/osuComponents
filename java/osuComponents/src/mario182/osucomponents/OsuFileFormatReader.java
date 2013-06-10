@@ -90,7 +90,7 @@ public class OsuFileFormatReader {
                 }
             }
             if (position == OsuFileScanStatus.FORMAT_UNKNOWN){
-                throw new IOException("Not a beatmap.");
+                throw new IOException("File is not a beatmap.");
             }
             if(!b.containsKey("Background")) {
                 b.put("Background", "nonexistent.png");
