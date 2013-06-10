@@ -42,7 +42,7 @@ public class OsuCheck {
     }
     
     private static boolean checkIfOsuIsRunningWindows() throws IOException{
-        Process p = Runtime.getRuntime().exec("tasklist /fi \"IMAGENAME e osu!.exe\"");
+        Process p = Runtime.getRuntime().exec("tasklist /fi \"IMAGENAME eq osu!.exe\"");
         try {
             p.waitFor();
             BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
