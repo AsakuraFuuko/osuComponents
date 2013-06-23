@@ -67,7 +67,7 @@ namespace osuComponents {
         /// <summary>
         /// Gets the romanized name of the artist of this beatmap's song.
         /// </summary>
-        public String Artist_Romanized { get { return artist_r; } }
+        public String ArtistRomanized { get { return artist_r; } }
         /// <summary>
         /// Gets the title of this beatmap's song.
         /// </summary>
@@ -75,7 +75,7 @@ namespace osuComponents {
         /// <summary>
         /// Gets the romanized title of this beatmap's song.
         /// </summary>
-        public String Title_Romanized { get { return title_r; } }
+        public String TitleRomanized { get { return title_r; } }
         /// <summary>
         /// Gets this beatmap's tags as a space-seperated string.
         /// </summary>
